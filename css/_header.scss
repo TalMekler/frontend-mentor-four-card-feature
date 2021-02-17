@@ -1,0 +1,34 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        font-weight: $fw1;
+
+        span {
+            display: block;
+            font-weight: $fw3;
+        }
+        @include window_maxWidth(1130) {
+            text-align: center;
+            font-size: Rem(18);
+            margin-bottom: Rem(24);
+
+            span {
+                text-align: center;
+                font-size: Rem(18);
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        max-width: Rem(545);
+        font-weight: $fw1;
+
+        @include window_maxWidth(1130) {
+            font-size: Rem(12);
+        }
+    }
+}

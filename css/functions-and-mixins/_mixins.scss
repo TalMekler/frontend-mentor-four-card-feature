@@ -1,0 +1,25 @@
+// functions-and-mixins/mixins
+
+@mixin window_maxWidth($width) {
+    @media screen and (max-width: $width * 1px){
+        @content;
+    }
+}
+@mixin window_minWidth($width) {
+    @media screen and (min-width: $width){
+        @content;
+    }
+}
+
+@mixin card_before($clr) {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: Rem(4);
+        top: 0;
+        left: 0;
+        background: $clr;
+    }
+}

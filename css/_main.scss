@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $neutral-clr3;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: $ff1;
+    padding: Rem(60) Rem(165) Rem(10);
+
+    @include window_maxWidth(1130) {
+        padding: Rem(60) Rem(41);
+    }
+}
+
+.light {
+    color: $neutral-clr2;
+}
